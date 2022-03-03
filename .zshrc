@@ -14,7 +14,7 @@ function git_branch_name()
 
 setopt prompt_subst
 
-prompt='%B%{$fg[red]%}%2/ %{$fg[green]%}$(git_branch_name) %{$fg[white]%}$> '
+prompt='%B%{$fg[red]%}%0/ %{$fg[green]%}$(git_branch_name) %{$fg[white]%}$> '
 
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
